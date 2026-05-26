@@ -42,7 +42,7 @@ O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma c
 
 - **AWS Lambda**
 - **Foco:** Execução de tarefas automáticas sem servidor, com cobrança apenas por execução
-- **Caso de uso:** A cada pedido realizado por uma farmácia cliente, uma série de processos precisa acontecer automaticamente — validação da forma de pagamento, emissão de fatura, geração de nota fiscal, notificação do setor de separação de estoque e atualização do inventário. Com servidores locais, um sistema dedicado precisa ficar rodando continuamente para executar essas tarefas, gerando custo de energia e manutenção mesmo nos períodos sem pedidos. Com o Lambda, cada uma dessas tarefas vira uma função independente que é acionada automaticamente quando um pedido entra, executa e para — a empresa paga apenas pelo tempo de processamento de cada função, eliminando o custo de infraestrutura ociosa entre os pedidos.
+- **Caso de uso:** A cada pedido realizado por uma farmácia cliente, uma série de processos precisa acontecer automaticamente validação da forma de pagamento, emissão de fatura, geração de nota fiscal, notificação do setor de separação de estoque e atualização do inventário. Com servidores locais, um sistema dedicado precisa ficar rodando continuamente para executar essas tarefas, gerando custo de energia e manutenção mesmo nos períodos sem pedidos. Com o Lambda, cada uma dessas tarefas vira uma função independente que é acionada automaticamente quando um pedido entra, executa e para a empresa paga apenas pelo tempo de processamento de cada função, eliminando o custo de infraestrutura ociosa entre os pedidos.
 
 ---
 
