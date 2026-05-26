@@ -30,13 +30,13 @@ O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma c
 
 - **Amazon S3 — Simple Storage Service**
 - **Foco:** Armazenamento escalável em nuvem com pagamento conforme o uso
-- **Caso de uso:** A farmacêutica utiliza o S3 para armazenar todos os seus dados operacionais — cadastro de clientes, detalhes de vendas, pedidos diários e controle de estoque. Além disso, documentos fiscais e laudos exigidos pela ANVISA, que precisam ser mantidos por anos, são arquivados no S3 Glacier, uma camada mais barata voltada para arquivos raramente acessados. Com isso, a empresa elimina o custo de compra de HD/SSD e para de pagar por espaço que não está usando, pagando apenas pelo volume de dados que realmente ocupa.
+- **Caso de uso:** A farmacêutica utiliza o S3 para armazenar todos os seus dados operacionais e cadastros de clientes, detalhes de vendas, pedidos diários e controle de estoque. Além disso, documentos fiscais e laudos exigidos pela ANVISA, que precisam ser mantidos por anos, são arquivados no S3 Glacier, uma camada mais barata voltada para arquivos raramente acessados. Com isso, a empresa elimina o custo de compra de HD/SSD e para de pagar por espaço que não está usando, pagando apenas pelo volume de dados que realmente ocupa.
 
 ### Etapa 2
 
 - **Amazon EC2 com Auto Scaling**
 - **Foco:** Infraestrutura computacional elástica que escala automaticamente conforme a demanda, eliminando custos de servidores ociosos
-- **Caso de uso:** A farmacêutica enfrenta picos de pedidos em períodos previsíveis — mudança de estações com aumento de resfriados, início de mês quando as farmácias clientes repõem estoque e fins de semana com maior movimento nas lojas. Com servidores locais de capacidade fixa, nesses momentos múltiplas farmácias clientes tentam acessar o sistema simultaneamente, gerando erros de acesso, pedidos não finalizados e risco de ruptura de contratos. Com EC2 e Auto Scaling, novas instâncias sobem automaticamente durante os picos e são desligadas quando a demanda cai — a empresa para de pagar por capacidade ociosa durante períodos tranquilos e para de perder vendas nos momentos de maior movimento.
+- **Caso de uso:** A farmacêutica enfrenta picos de pedidos em períodos previsíveis, mudança de estações com aumento de resfriados, início de mês quando as farmácias clientes repõem estoque e fins de semana com maior movimento nas lojas. Com servidores locais de capacidade fixa, nesses momentos múltiplas farmácias clientes tentam acessar o sistema simultaneamente, gerando erros de acesso, pedidos não finalizados e risco de ruptura de contratos. Com EC2 e Auto Scaling, novas instâncias sobem automaticamente durante os picos e são desligadas quando a demanda cai e a empresa para de pagar por capacidade ociosa durante períodos tranquilos e para de perder vendas nos momentos de maior movimento.
 
 ### Etapa 3
 
